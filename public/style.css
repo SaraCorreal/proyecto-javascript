@@ -23,18 +23,64 @@ body {
 
 .card {
   background: var(--card);
-  padding: 2.5rem;
+  padding: 100px;
   border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(79, 70, 229, 0.12);
-  max-width: 600px;
-  width: min(90vw, 600px);
+  box-shadow: 0 20px 100px rgba(79, 70, 229, 0.12);
+  max-width: 12000px;
+  width: min(90vw, 12000px);
   text-align: center;
+
+}
+
+#inicio p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+#acerca p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+#acerca h2 {
+  color: var(--primary);
+}
+
+#proyectos p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+#servicios p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+#contacto p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background: rgb(113, 17, 204);
+  color: white;
+  border: 2px solid rgb(246, 246, 246);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 h1 {
   margin: 0 0 1rem;
   color: var(--primary);
   font-size: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  font-weight: bold;
 }
 
 h2 {
@@ -47,6 +93,7 @@ p {
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.6;
+  text-align: left;
 }
 
 .navbar {
@@ -94,7 +141,17 @@ p {
 li {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, var(--bg), #e0e7ff);
   text-decoration: none;
   text-align: left;
   font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.card img {
+  border-radius: 100px;
+  max-width: 100%;
+  height: auto;
 }
