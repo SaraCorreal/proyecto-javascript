@@ -1,16 +1,22 @@
 {
-  "name": "proyecto",
+  "name": "proyecto-javascript",
   "version": "1.0.0",
-  "description": "configurando node",
+  "description": "Proyecto básico con Node.js y Express para servir una página HTML",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "javascript"
+  ],
+  "author": "sara",
+  "license": "ISC",
   "dependencies": {
     "express": "^5.3.0",
     "nodemon": "^3.1.14"
-  },
-  "author": "sara",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "index": "node index.js"
-  },
-  "license": "ISC"
+  }
 }
