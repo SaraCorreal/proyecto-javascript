@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "node --watch index.js"
   },
   "keywords": [
     "node",
@@ -16,7 +16,6 @@
   "author": "sara",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.3.0",
-    "nodemon": "^3.1.14"
+    "express": "^5.3.0"
   }
 }

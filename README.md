@@ -4,7 +4,7 @@ Aplicación básica con Node.js y Express que sirve una página HTML estática.
 
 ## Requisitos
 
-- Node.js 18 o superior
+- Node.js 18.11 o superior
 - npm
 
 ## Instalación
@@ -31,4 +31,4 @@ http://localhost:3000
 npm run dev
 ```
 
-Este comando usa `nodemon` para reiniciar el servidor automáticamente durante el desarrollo.
+Este comando usa el modo de vigilancia integrado en Node.js para reiniciar el servidor automáticamente durante el desarrollo.
