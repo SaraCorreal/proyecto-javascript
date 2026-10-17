@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto JavaScript</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <main class="card">
-      <h1>Hola mundo</h1>
-      <h2>Bienvenidos a mi proyecto</h2>
-      <p>Este es un ejemplo de una página web básica servida con Node.js y Express.</p>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto JavaScript</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#inicio" class="activo">Inicio</a>
+    <a href="#acerca">Acerca de</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="card seccion visible" id="inicio">
+    <h1>Hola mundo</h1>
+    <h2>Bienvenidos a mi proyecto</h2>
+    <p>Este es un ejemplo de una página web básica servida con Node.js y Express.</p>
+  </div>
+
+  <div class="card seccion" id="acerca">
+    <h1>Acerca de</h1>
+    <p>Aquí va la información sobre mí o mi proyecto.</p>
+  </div>
+
+  <div class="card seccion" id="proyectos">
+    <h1>Proyectos</h1>
+    <p>Aquí mostraré mis proyectos.</p>
+  </div>
+
+  <div class="card seccion" id="servicios">
+    <h1>Servicios</h1>
+    <p>Estos son los servicios que ofrezco.</p>
+  </div>
+
+  <div class="card seccion" id="contacto">
+    <h1>Contacto</h1>
+    <p>Escríbeme para ponerte en contacto.</p>
+  </div>
+
+  <script>
+    const enlaces = document.querySelectorAll('.navbar a');
+    const secciones = document.querySelectorAll('.seccion');
+
+    enlaces.forEach(enlace => {
+      enlace.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = enlace.getAttribute('href').slice(1);
+
+        secciones.forEach(s => s.classList.remove('visible'));
+        enlaces.forEach(a => a.classList.remove('activo'));
+
+        document.getElementById(id).classList.add('visible');
+        enlace.classList.add('activo');
+      });
+    });
+  </script>
+</body>
+
 </html>
